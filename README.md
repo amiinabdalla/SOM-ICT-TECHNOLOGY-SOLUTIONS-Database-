@@ -16,3 +16,19 @@ SELECT C.fullname, Pr.productname, S.quantity
 FROM Product_Sales S
 JOIN Customer C ON S.customerid = C.customerid
 JOIN Product Pr ON S.productid = Pr.productid;
+
+
+---
+
+## 🏬 Real-World Use Case (CCTV Retail Example)
+This database is tailored for electronic retail businesses, such as a **CCTV Camera & Security Systems Store**. 
+* **Product Table:** Tracks inventory items like *Hikvision 4MP Domes, Dahua PTZ Cameras, and 8-Channel DVRs*.
+* **Product_Sales Table:** Acts as the checkout system, recording everyday customer transactions and quantities sold.
+
+---
+
+## 🚀 How to Run & Setup
+1. Clone this repository or download the `.sql` script file.
+2. Open Microsoft SQL Server Management Studio (SSMS) and log into your local instance.
+3. Open a **New Query** window, paste the script, and press **Execute (F5)** to auto-generate the schema, primary-foreign key relationships, and seed data.
+4. Run the **Advanced Multi-Table JOIN Query** provided above to instantly generate your first sales report!
